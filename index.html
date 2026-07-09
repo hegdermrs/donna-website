@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donna — the right hand you haven't hired yet</title>
+  <meta name="description" content="She handles your reading, writing, and filing, and remembers more about your business every day. A desktop app, running on your own computer." />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,380..380;14..32,560..560;14..32,650..650;14..32,720..720&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Nav: reuses Donna's own floating-dock visual language (soft-shadow pill), not a generic top bar. -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">
+        <img src="assets/donna-logo.png" alt="Donna" class="brand-logo" />
+      </a>
+      <div class="nav-links">
+        <a href="#work">What it does</a>
+        <a href="#trust">Verified autonomy</a>
+        <a href="#local">Privacy</a>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>The right hand you haven't&nbsp;hired&nbsp;yet.</h1>
+        <p class="hero-sub">
+          She handles your reading, writing, and filing, and remembers more about your
+          business every day.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" id="download" href="https://github.com/hegdermrs/chief-releases/releases/latest/download/Donna-Setup.exe">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/></svg>
+            Download for Windows
+          </a>
+          <span class="cta-secondary">macOS — coming soon</span>
+        </div>
+        <p class="hero-fineprint">Free while in beta. Runs locally on your machine.</p>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <!-- Real recreation of Donna's own Today card + terminal-tool trace, not a stock illustration or fake browser chrome. -->
+        <div class="mock-card mock-card--today">
+          <div class="mock-kicker">DONE TODAY</div>
+          <div class="mock-title">3 tasks finished while you were out</div>
+          <div class="mock-body">Renamed 6 invoices · rebooked a supplier call for Thursday · pulled competitor pricing into a one-pager.</div>
+          <div class="mock-row">
+            <span class="btn btn-ghost btn-xs">Review</span>
+            <span class="btn btn-primary btn-xs">All good</span>
+          </div>
+        </div>
+        <div class="mock-card mock-card--terminal">
+          <div class="mock-terminal-bar"><span></span><span></span><span></span></div>
+          <div class="mock-terminal-line"><span class="mock-terminal-prompt">$</span> find invoices missing a PO number, rename the files, back them up</div>
+          <div class="mock-terminal-out">Scanned 214 files in Invoices/2026 · found 6 without a PO · renamed &amp; filed · synced to Drive</div>
+        </div>
+        <div class="mock-badge">
+          <span class="mock-dot"></span>
+          Verified 5 times in a row — offering more autonomy
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What it does ─────────────────────────────────────────────────── -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>Give her something to do.</h2>
+        <p>She goes and does it — files, terminal, web, whatever the job takes.</p>
+      </div>
+
+      <div class="feature-lead">
+        <div class="feature-lead-copy">
+          <h3>She has a terminal, a filesystem, a browser — and she uses them.</h3>
+          <p>
+            A real terminal, a real filesystem, a real browser, all under the hood. Sort a folder
+            of invoices, pull competitor pricing off the web, rename and file a hundred receipts.
+            You ask in plain English; she runs the actual commands and shows you what she did.
+          </p>
+        </div>
+        <div class="feature-lead-art">
+          <div class="mock-card mock-card--terminal mock-card--terminal-lg">
+            <div class="mock-terminal-bar"><span></span><span></span><span></span></div>
+            <div class="mock-terminal-line"><span class="mock-terminal-prompt">$</span> go through Downloads and sort anything older than 30 days into an Archive folder</div>
+            <div class="mock-terminal-out">Moved 41 files into Archive/2026-06 · left 12 recent files alone</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-lead feature-lead--reverse">
+        <div class="feature-lead-copy">
+          <h3>Remembers your business, and gets sharper every day.</h3>
+          <p>
+            Every commitment, every person, every preference you mention becomes part of a local
+            memory that compounds over time. Ask about “the Q3 renewal” six months from now and
+            she still knows what you meant.
+          </p>
+        </div>
+        <div class="feature-lead-art">
+          <div class="mock-card mock-card--memory">
+            <div class="mock-memory-row"><span class="mock-tag">person</span>Antonio Centeno — founder, daily contact</div>
+            <div class="mock-memory-row"><span class="mock-tag">commitment</span>Send Q3 renewal terms — due Friday</div>
+            <div class="mock-memory-row"><span class="mock-tag">preference</span>Briefs under 150 words, numbers first</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-lead">
+        <div class="feature-lead-copy">
+          <h3>Connect any app.</h3>
+          <p>
+            Gmail, Calendar, and Drive come built in. Anything else with an API key, or an MCP
+            server, connects in one line of chat: “connect me to Stripe, here's the key.”
+          </p>
+        </div>
+        <div class="feature-lead-art">
+          <div class="mock-card mock-card--connect">
+            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Gmail — Connected</div>
+            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Google Calendar — Connected</div>
+            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Google Drive — Connected</div>
+            <div class="mock-connect-row mock-connect-row--muted">+ anything with an API key</div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="capability-list">
+        <li>
+          <h4>Runs on her own schedule</h4>
+          <p>“Check pricing every Monday morning” is enough — no cron syntax, she just sets the job and runs it.</p>
+        </li>
+        <li>
+          <h4>Speaks and listens</h4>
+          <p>Real dictation in, natural speech out — both run on your device, no cloud voice service involved.</p>
+        </li>
+        <li>
+          <h4>Backs herself up</h4>
+          <p>A nightly snapshot goes to your own Drive automatically, once it's connected.</p>
+        </li>
+        <li>
+          <h4>Updates quietly</h4>
+          <p>New versions download in the background and install on restart — you're never stuck on stale software.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── Verified autonomy ────────────────────────────────────────────── -->
+    <section class="section section--verify" id="trust">
+      <div class="section-head">
+        <h2>She has to prove herself first.</h2>
+        <p>A new kind of task starts small, and only gets more room to work as she proves she can be trusted.</p>
+      </div>
+
+      <ol class="trust-steps">
+        <li>
+          <span class="trust-num">1</span>
+          <div>
+            <h4>She starts cautious.</h4>
+            <p>A new kind of task begins read-only and draft-only — she can look and prepare things for you to approve.</p>
+          </div>
+        </li>
+        <li>
+          <span class="trust-num">2</span>
+          <div>
+            <h4>Someone else checks the work.</h4>
+            <p>A separate pass verifies the task actually happened the way it says it did. She doesn't grade her own homework.</p>
+          </div>
+        </li>
+        <li>
+          <span class="trust-num">3</span>
+          <div>
+            <h4>Then she offers to take on more.</h4>
+            <p>After enough correct runs in a row, she asks for the next level — sending, archiving, running on a schedule unattended. You say yes or no.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── Local-first ──────────────────────────────────────────────────── -->
+    <section class="section section--local" id="local">
+      <div class="local-grid">
+        <div>
+          <h2>Everything stays on your computer.</h2>
+          <p>
+            Her memory, your files, everything she's done for you — stored on your own machine,
+            not on someone else's server. The only network calls she makes are to Claude (the
+            model doing the thinking) and whatever you explicitly connect. Nothing is sold,
+            shared, or used to train anything.
+          </p>
+        </div>
+        <div class="local-art" aria-hidden="true">
+          <div class="local-diagram">
+            <div class="local-node local-node--device">
+              <span class="local-node-label">Your computer</span>
+              <span class="local-node-sub">Memory · Files · Voice</span>
+            </div>
+            <div class="local-line"></div>
+            <div class="local-node local-node--cloud">
+              <span class="local-node-label">Model only</span>
+              <span class="local-node-sub">Nothing personal stored</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Final CTA ────────────────────────────────────────────────────── -->
+    <section class="section section--cta">
+      <h2>Put her to work.</h2>
+      <p>Free while in beta. Takes about a minute to set up.</p>
+      <div class="cta-row cta-row--center">
+        <a class="btn btn-primary btn-lg" href="https://github.com/hegdermrs/chief-releases/releases/latest/download/Donna-Setup.exe">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/></svg>
+          Download for Windows
+        </a>
+        <span class="cta-secondary">macOS — coming soon</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="nav-brand nav-brand--footer" href="#top">
+      <img src="assets/donna-logo.png" alt="Donna" class="brand-logo" />
+    </a>
+    <p>Built for business owners who'd rather it just got done.</p>
+    <div class="footer-links">
+      <a href="https://github.com/hegdermrs/chief-releases/releases">Download</a>
+      <a href="mailto:kai@realmenrealstyle.com">Contact</a>
+    </div>
+    <p class="footer-copyright">© 2026 Donna. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
