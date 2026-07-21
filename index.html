@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Donna — the right hand you haven't hired yet</title>
-  <meta name="description" content="She handles your reading, writing, and filing, and remembers more about your business every day. A desktop app, running on your own computer." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Donna — the right hand you haven’t hired yet</title>
+  <meta name="description" content="An executive assistant who lives on your computer. She runs your email and calendar, protects your time, and catches the problems you didn’t see. Built for business owners." />
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.ico" />
@@ -12,238 +12,388 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,380..380;14..32,560..560;14..32,650..650;14..32,720..720&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,480..650&family=Inter:wght@400;550;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Nav: reuses Donna's own floating-dock visual language (soft-shadow pill), not a generic top bar. -->
-  <header class="nav-wrap">
-    <nav class="nav" aria-label="Primary">
-      <a class="nav-brand" href="#top">
-        <img src="assets/donna-logo.png" alt="Donna" class="brand-logo" />
-      </a>
-      <div class="nav-links">
-        <a href="#work">What it does</a>
-        <a href="#trust">Verified autonomy</a>
-        <a href="#local">Privacy</a>
-      </div>
-      <a class="btn btn-primary btn-sm" href="#download">Download</a>
-    </nav>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/donna-logo.png" alt="Donna" width="53" height="20" />
+    </a>
+    <a class="btn btn-primary" href="#access" data-open-modal>Get Donna</a>
   </header>
 
-  <main id="main">
+  <main id="main" class="wrap">
 
     <!-- ── Hero ─────────────────────────────────────────────────────────── -->
     <section class="hero" id="top">
-      <div class="hero-copy">
-        <h1>The right hand you haven't&nbsp;hired&nbsp;yet.</h1>
-        <p class="hero-sub">
-          She handles your reading, writing, and filing, and remembers more about your
-          business every day.
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="rise" style="--i:0">The <span class="under">right hand</span> you haven’t hired yet.</h1>
+          <p class="hero-sub rise" style="--i:1">
+            Donna is an executive assistant who lives on your computer. She runs your
+            email and calendar, protects your time, and catches the problems you
+            didn’t see coming.
+          </p>
+          <div class="hero-cta rise" style="--i:2">
+            <a class="btn btn-primary btn-lg" href="#access" data-open-modal>Get Donna</a>
+            <a class="btn btn-ghost btn-lg" href="#weeks">See how she works</a>
+          </div>
+        </div>
+        <div class="hero-art rise" style="--i:2" aria-hidden="true">
+          <img src="assets/donna.png" alt="" width="1122" height="1402" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The fires ────────────────────────────────────────────────────── -->
+    <section class="fires">
+      <p class="io-reveal">
+        Some days you run the business. Most days the business runs you — call to
+        call, email to email, fire to fire.
+        <strong>Donna puts you back on the right side of that.</strong>
+      </p>
+    </section>
+
+    <!-- ── Her first weeks ──────────────────────────────────────────────── -->
+    <section class="stages" id="weeks">
+      <div class="stages-head io-reveal">
+        <h2>What can Donna do?</h2>
+      </div>
+
+      <article class="stage">
+        <div class="stage-copy io-reveal">
+          <span class="stage-when">Day one</span>
+          <h3>She reads everything.</h3>
+          <p>
+            Years of your email, in about an hour — starting with the mail you
+            sent, because that’s your voice and your people. By the time you’ve
+            made coffee, she knows who matters, what’s owed, and what’s overdue.
+          </p>
+        </div>
+        <div class="stage-visual io-reveal">
+          <figure class="shot media-well media-frame" data-screenshot="memory">
+            <img src="assets/ss2.png" alt="Donna’s Memory tab: 24,407 memories, 99% of email read, and a map of the people in the business" width="1561" height="1132" loading="lazy" />
+          </figure>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-copy io-reveal">
+          <span class="stage-when">The first week</span>
+          <h3>She takes the inbox and the calendar.</h3>
+          <p>
+            A short brief every morning — what needs you, what she’s already
+            handled. Replies drafted in your voice, waiting on your yes. And
+            before every meeting, one page on who you’re seeing and where things
+            stand.
+          </p>
+        </div>
+        <div class="stage-visual io-reveal">
+          <!-- Swap slot: assets/shots/brief.png -->
+          <figure class="shot media-well media-panel" data-screenshot="brief">
+            <div class="card">
+              <div class="card-kicker">Morning brief · 7:00</div>
+              <div class="card-title">Two things need you today.</div>
+              <p class="card-body">
+                The Rivera invoice is due Friday, and Dana’s waiting on an answer
+                about the venue. Everything else is handled.
+              </p>
+              <div class="card-row">
+                <span class="chip chip-solid">Review drafts</span>
+                <span class="chip chip-ghost">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>
+                  Read it aloud
+                </span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-copy io-reveal">
+          <span class="stage-when">Week three</span>
+          <h3>She starts catching things.</h3>
+          <p>
+            The renewal that quietly went up. The promise about to slip. The
+            invoice nobody chased. She watches the patterns in your business, so
+            surprises come from her — with time to act — not from the bank
+            statement.
+          </p>
+        </div>
+        <div class="stage-visual io-reveal">
+          <figure class="shot media-well media-frame" data-screenshot="catch">
+            <img src="assets/ss.png" alt="A chat with Donna where she flags a project running 18 days overdue and offers to dig into it" width="1271" height="1066" loading="lazy" />
+          </figure>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-copy io-reveal">
+          <span class="stage-when">From then on</span>
+          <h3>She takes on more — at your pace.</h3>
+          <p>
+            New kinds of work start as drafts for your approval. Once she’s done
+            something right several times in a row, she asks to handle it on her
+            own. You say yes, or you don’t. Either way, everything she does is
+            checked and written down.
+          </p>
+        </div>
+        <div class="stage-visual io-reveal">
+          <!-- Swap slot: assets/shots/trust.png -->
+          <figure class="shot media-well media-panel" data-screenshot="trust">
+            <div class="card">
+              <div class="card-kicker">Autonomy</div>
+              <div class="card-title">Let Donna send routine replies herself?</div>
+              <p class="card-body">Checked and correct 5 times in a row. Always undoable, adjustable anytime.</p>
+              <div class="card-row">
+                <span class="chip chip-solid">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                  Allow
+                </span>
+                <span class="chip chip-ghost">Not yet</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- ── Why she's different ──────────────────────────────────────────── -->
+    <section class="different">
+      <div class="different-grid">
+        <div class="io-reveal">
+          <h2>She lives on your computer.</h2>
+          <p>
+            Not on a website, not on somebody’s server — on the machine in front
+            of you. Her memory of your business sits in a file you own, on a
+            disk you own. Nothing about your business is sold, shared, or used
+            to train anything.
+          </p>
+        </div>
+        <div class="io-reveal">
+          <h2>She never forgets.</h2>
+          <p>
+            Every person, promise, number, and date she reads becomes memory she
+            keeps. Ask about “the March invoice” a year from now and she knows
+            exactly which one you mean — because she was there.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Comparison ───────────────────────────────────────────────────── -->
+    <section class="compare">
+      <div class="compare-head io-reveal">
+        <h2>There are AI agents. And there’s Donna.</h2>
+        <p>
+          Plenty of tools can act on a computer. Most are built for people who
+          love setting things up. She’s built for people who have a business to
+          run.
         </p>
-        <div class="cta-row">
-          <a class="btn btn-primary btn-lg" id="download" href="https://github.com/hegdermrs/chief-releases/releases/latest/download/Donna-Setup.exe">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/></svg>
-            Download for Windows
-          </a>
-          <span class="cta-secondary">macOS — coming soon</span>
-        </div>
-        <p class="hero-fineprint">Free while in beta. Runs locally on your machine.</p>
       </div>
-
-      <div class="hero-art" aria-hidden="true">
-        <!-- Real recreation of Donna's own Today card + terminal-tool trace, not a stock illustration or fake browser chrome. -->
-        <div class="mock-card mock-card--today">
-          <div class="mock-kicker">DONE TODAY</div>
-          <div class="mock-title">3 tasks finished while you were out</div>
-          <div class="mock-body">Renamed 6 invoices · rebooked a supplier call for Thursday · pulled competitor pricing into a one-pager.</div>
-          <div class="mock-row">
-            <span class="btn btn-ghost btn-xs">Review</span>
-            <span class="btn btn-primary btn-xs">All good</span>
-          </div>
-        </div>
-        <div class="mock-card mock-card--terminal">
-          <div class="mock-terminal-bar"><span></span><span></span><span></span></div>
-          <div class="mock-terminal-line"><span class="mock-terminal-prompt">$</span> find invoices missing a PO number, rename the files, back them up</div>
-          <div class="mock-terminal-out">Scanned 214 files in Invoices/2026 · found 6 without a PO · renamed &amp; filed · synced to Drive</div>
-        </div>
-        <div class="mock-badge">
-          <span class="mock-dot"></span>
-          Verified 5 times in a row — offering more autonomy
-        </div>
+      <div class="compare-scroll io-reveal">
+        <table>
+          <colgroup>
+            <col style="width: 24%" />
+            <col style="width: 42%" />
+            <col style="width: 34%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">What</span></th>
+              <th scope="col" class="donna-col">Donna</th>
+              <th scope="col">Do-it-yourself AI agents</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Getting started</th>
+              <td class="donna-col">Download, sign in, done.</td>
+              <td>A weekend in the terminal.</td>
+            </tr>
+            <tr>
+              <th scope="row">Day one</th>
+              <td class="donna-col">Reads years of your email in about an hour.</td>
+              <td>Starts from a blank slate.</td>
+            </tr>
+            <tr>
+              <th scope="row">Made for</th>
+              <td class="donna-col">Business owners.</td>
+              <td>People who love to tinker.</td>
+            </tr>
+            <tr>
+              <th scope="row">Your data</th>
+              <td class="donna-col">Lives on your computer.</td>
+              <td>Depends on how you wired it.</td>
+            </tr>
+            <tr>
+              <th scope="row">Before acting</th>
+              <td class="donna-col">Asks first, until she’s earned your yes.</td>
+              <td>Whatever you configured.</td>
+            </tr>
+            <tr>
+              <th scope="row">When something breaks</th>
+              <td class="donna-col">She keeps working and tells you plainly.</td>
+              <td>You’re the IT department.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="compare-after io-reveal">
+        And next to hiring another pair of hands? She starts tomorrow morning,
+        and she never forgets a thing.
+      </p>
     </section>
 
-    <!-- ── What it does ─────────────────────────────────────────────────── -->
-    <section class="section" id="work">
-      <div class="section-head">
-        <h2>Give her something to do.</h2>
-        <p>She goes and does it — files, terminal, web, whatever the job takes.</p>
+    <!-- ── Case studies — hidden until real ones exist ──────────────────────
+    <section class="cases">
+      <div class="compare-head">
+        <h2>Owners who run with her.</h2>
       </div>
-
-      <div class="feature-lead">
-        <div class="feature-lead-copy">
-          <h3>She has a terminal, a filesystem, a browser — and she uses them.</h3>
-          <p>
-            A real terminal, a real filesystem, a real browser, all under the hood. Sort a folder
-            of invoices, pull competitor pricing off the web, rename and file a hundred receipts.
-            You ask in plain English; she runs the actual commands and shows you what she did.
-          </p>
-        </div>
-        <div class="feature-lead-art">
-          <div class="mock-card mock-card--terminal mock-card--terminal-lg">
-            <div class="mock-terminal-bar"><span></span><span></span><span></span></div>
-            <div class="mock-terminal-line"><span class="mock-terminal-prompt">$</span> go through Downloads and sort anything older than 30 days into an Archive folder</div>
-            <div class="mock-terminal-out">Moved 41 files into Archive/2026-06 · left 12 recent files alone</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature-lead feature-lead--reverse">
-        <div class="feature-lead-copy">
-          <h3>Remembers your business, and gets sharper every day.</h3>
-          <p>
-            Every commitment, every person, every preference you mention becomes part of a local
-            memory that compounds over time. Ask about “the Q3 renewal” six months from now and
-            she still knows what you meant.
-          </p>
-        </div>
-        <div class="feature-lead-art">
-          <div class="mock-card mock-card--memory">
-            <div class="mock-memory-row"><span class="mock-tag">person</span>Antonio Centeno — founder, daily contact</div>
-            <div class="mock-memory-row"><span class="mock-tag">commitment</span>Send Q3 renewal terms — due Friday</div>
-            <div class="mock-memory-row"><span class="mock-tag">preference</span>Briefs under 150 words, numbers first</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature-lead">
-        <div class="feature-lead-copy">
-          <h3>Connect any app.</h3>
-          <p>
-            Gmail, Calendar, and Drive come built in. Anything else with an API key, or an MCP
-            server, connects in one line of chat: “connect me to Stripe, here's the key.”
-          </p>
-        </div>
-        <div class="feature-lead-art">
-          <div class="mock-card mock-card--connect">
-            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Gmail — Connected</div>
-            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Google Calendar — Connected</div>
-            <div class="mock-connect-row"><span class="mock-dot mock-dot--good"></span>Google Drive — Connected</div>
-            <div class="mock-connect-row mock-connect-row--muted">+ anything with an API key</div>
-          </div>
-        </div>
-      </div>
-
-      <ul class="capability-list">
-        <li>
-          <h4>Runs on her own schedule</h4>
-          <p>“Check pricing every Monday morning” is enough — no cron syntax, she just sets the job and runs it.</p>
-        </li>
-        <li>
-          <h4>Speaks and listens</h4>
-          <p>Real dictation in, natural speech out — both run on your device, no cloud voice service involved.</p>
-        </li>
-        <li>
-          <h4>Backs herself up</h4>
-          <p>A nightly snapshot goes to your own Drive automatically, once it's connected.</p>
-        </li>
-        <li>
-          <h4>Updates quietly</h4>
-          <p>New versions download in the background and install on restart — you're never stuck on stale software.</p>
-        </li>
-      </ul>
+      <figure class="case">
+        <blockquote>[Real quote from a real owner]</blockquote>
+        <figcaption>[Name · business]</figcaption>
+      </figure>
     </section>
+    ───────────────────────────────────────────────────────────────────── -->
 
-    <!-- ── Verified autonomy ────────────────────────────────────────────── -->
-    <section class="section section--verify" id="trust">
-      <div class="section-head">
-        <h2>She has to prove herself first.</h2>
-        <p>A new kind of task starts small, and only gets more room to work as she proves she can be trusted.</p>
-      </div>
-
-      <ol class="trust-steps">
-        <li>
-          <span class="trust-num">1</span>
-          <div>
-            <h4>She starts cautious.</h4>
-            <p>A new kind of task begins read-only and draft-only — she can look and prepare things for you to approve.</p>
-          </div>
-        </li>
-        <li>
-          <span class="trust-num">2</span>
-          <div>
-            <h4>Someone else checks the work.</h4>
-            <p>A separate pass verifies the task actually happened the way it says it did. She doesn't grade her own homework.</p>
-          </div>
-        </li>
-        <li>
-          <span class="trust-num">3</span>
-          <div>
-            <h4>Then she offers to take on more.</h4>
-            <p>After enough correct runs in a row, she asks for the next level — sending, archiving, running on a schedule unattended. You say yes or no.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ── Local-first ──────────────────────────────────────────────────── -->
-    <section class="section section--local" id="local">
-      <div class="local-grid">
-        <div>
-          <h2>Everything stays on your computer.</h2>
-          <p>
-            Her memory, your files, everything she's done for you — stored on your own machine,
-            not on someone else's server. The only network calls she makes are to Claude (the
-            model doing the thinking) and whatever you explicitly connect. Nothing is sold,
-            shared, or used to train anything.
-          </p>
+    <!-- ── Request access ───────────────────────────────────────────────── -->
+    <section class="access" id="access">
+      <div class="access-inner io-reveal">
+        <h2><img class="inline-logo" src="assets/donna-logo.png" alt="Donna" width="212" height="80" /> is ready when you are.</h2>
+        <p>
+          Drop in your email and the download is yours. We’ll only use it to
+          tell you what she’s learned to do.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" type="button" data-open-modal>Download Donna</button>
         </div>
-        <div class="local-art" aria-hidden="true">
-          <div class="local-diagram">
-            <div class="local-node local-node--device">
-              <span class="local-node-label">Your computer</span>
-              <span class="local-node-sub">Memory · Files · Voice</span>
-            </div>
-            <div class="local-line"></div>
-            <div class="local-node local-node--cloud">
-              <span class="local-node-label">Model only</span>
-              <span class="local-node-sub">Nothing personal stored</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Final CTA ────────────────────────────────────────────────────── -->
-    <section class="section section--cta">
-      <h2>Put her to work.</h2>
-      <p>Free while in beta. Takes about a minute to set up.</p>
-      <div class="cta-row cta-row--center">
-        <a class="btn btn-primary btn-lg" href="https://github.com/hegdermrs/chief-releases/releases/latest/download/Donna-Setup.exe">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/></svg>
-          Download for Windows
-        </a>
-        <span class="cta-secondary">macOS — coming soon</span>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <a class="nav-brand nav-brand--footer" href="#top">
-      <img src="assets/donna-logo.png" alt="Donna" class="brand-logo" />
-    </a>
-    <p>Built for business owners who'd rather it just got done.</p>
-    <div class="footer-links">
-      <a href="https://github.com/hegdermrs/chief-releases/releases">Download</a>
+    <p class="footer-line">
+      <span>© 2026 Donna</span>
+      <span>Built for owners who’d rather it just got done.</span>
+      <a href="#access" data-open-modal>Download</a>
       <a href="mailto:kai@realmenrealstyle.com">Contact</a>
-    </div>
-    <p class="footer-copyright">© 2026 Donna. All rights reserved.</p>
+    </p>
   </footer>
+
+  <dialog id="get-modal" aria-labelledby="get-modal-title">
+    <form method="POST" action="https://formspree.io/f/xzdnvazb" class="get-form">
+      <p class="hp" aria-hidden="true"><label>Don’t fill this in: <input name="_gotcha" tabindex="-1" autocomplete="off" /></label></p>
+      <h3 id="get-modal-title">Get Donna on your computer.</h3>
+      <label class="get-label" for="get-email">Email address</label>
+      <input class="get-input" id="get-email" name="email" type="email" required autocomplete="email" placeholder="you@yourbusiness.com" />
+      <div class="get-row">
+        <button class="btn btn-primary" type="submit" data-submit>Continue</button>
+        <button class="btn btn-ghost" type="button" data-close-modal>Not now</button>
+      </div>
+    </form>
+    <div class="get-done" hidden>
+      <h3>You’re set.</h3>
+      <p>Download the installer and run it — she takes it from there.</p>
+      <div class="get-row">
+        <a class="btn btn-primary" href="https://github.com/hegdermrs/chief-releases/releases/latest/download/Donna-Setup.exe" download>Download for Windows</a>
+        <button class="btn btn-ghost" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    (() => {
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // One-shot section reveals.
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      }, { threshold: 0.18 });
+      document.querySelectorAll('.io-reveal').forEach(el => io.observe(el));
+
+      // Day-one counter + meter, fired once when visible.
+      const fmt = new Intl.NumberFormat('en-US');
+      const counters = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          counters.unobserve(e.target);
+          const el = e.target;
+          const to = Number(el.dataset.countTo || '0');
+          const meter = el.parentElement.querySelector('[data-meter-to]');
+          if (meter) requestAnimationFrame(() => { meter.style.width = meter.dataset.meterTo + '%'; });
+          if (reduced) { el.textContent = fmt.format(to); continue; }
+          const start = performance.now();
+          const dur = 1400;
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / dur);
+            const eased = 1 - Math.pow(1 - t, 3);
+            el.textContent = fmt.format(Math.round(to * eased));
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      }, { threshold: 0.5 });
+      document.querySelectorAll('[data-count-to]').forEach(el => counters.observe(el));
+
+      // Email-gated download. The form posts to Netlify Forms; the download
+      // reveals once the address is in. Capture is best-effort — a network
+      // hiccup never blocks the download itself.
+      const modal = document.getElementById('get-modal');
+      const form = modal.querySelector('.get-form');
+      const doneView = modal.querySelector('.get-done');
+      const alreadyIn = () => { try { return localStorage.getItem('donna_email_done') === '1'; } catch { return false; } };
+      const showDone = () => {
+        form.hidden = true;
+        doneView.hidden = false;
+        // Swallow stale or double clicks landing on the freshly swapped-in
+        // buttons (a double-click on "Continue" would otherwise hit "Close").
+        modal.style.pointerEvents = 'none';
+        setTimeout(() => { modal.style.pointerEvents = ''; }, 400);
+      };
+      document.querySelectorAll('[data-open-modal]').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (alreadyIn()) {
+            showDone();
+          } else {
+            form.hidden = false;
+            doneView.hidden = true;
+          }
+          modal.showModal();
+          if (!form.hidden) modal.querySelector('#get-email').focus();
+        });
+      });
+      modal.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', () => modal.close()));
+      modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('[data-submit]');
+        btn.dataset.state = 'loading';
+        btn.textContent = 'One moment…';
+        const endpoint = form.getAttribute('action');
+        if (endpoint && !endpoint.includes('FORM_ID_HERE')) {
+          try {
+            await fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) });
+          } catch { /* capture is best-effort — never blocks the download */ }
+        }
+        btn.removeAttribute('data-state');
+        btn.textContent = 'Continue';
+        try { localStorage.setItem('donna_email_done', '1'); } catch { /* private mode */ }
+        showDone();
+      });
+    })();
+  </script>
 
 </body>
 </html>
